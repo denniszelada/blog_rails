@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.8'
+gem 'bootstrap-sass', '2.0.4'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -8,6 +9,9 @@ gem 'rails', '3.2.8'
 group :development, :test do
   gem 'sqlite3' 
   gem 'rspec-rails'
+  gem 'guard-rspec'
+  gem 'spork'
+  gem 'guard-spork'
 end
 
 
@@ -42,6 +46,8 @@ gem 'jquery-rails'
 
 group :test do
   gem 'capybara'
+  gem 'rb-fsevent', :require => false
+  gem 'growl'
 end
 
 group :production do
